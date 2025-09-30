@@ -8,7 +8,7 @@ const FRONTEND_URL = "http://localhost:5173"; // o el puerto que uses
 
 // 1️⃣ Ruta de prueba (redirige al login de Ualá)
 app.get("/auth/uala", (req, res) => {
-  const callbackUrl = "http://localhost:3000/callback"; // debe coincidir con el backend
+  const callbackUrl = "https://utilities-zh2q.onrender.com/callback"; // debe coincidir con el backend
   const state = "mi_estado_secreto_123"; // podrías generarlo dinámicamente
 
   const redirectUrl = `https://web.prod.adquirencia.ar.ua.la/?callbackUrl=${encodeURIComponent(
